@@ -5,20 +5,32 @@
     <meta name="viewport" content="width-device-width,initial-scale=1.0">
     <title>blissful yoga</title>
    </head>
-   <style>.navbar-main-container{
+   <style>.navbar {
+            width: 1440px;
+            padding: 15px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background-color:rgb;
-            color:blue;
+            background: #ffffff;
             box-shadow: 0 2px 8px rgb(0, 0, 0);
-}
-.logo{
-  display: flex;
-  align-items: center;
-  gap:10px;
-  justify-content: left;
-}
+            position: fixed;
+            top: 0px;
+            left: 0px
+        }
+
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            color: #121312;
+        }
+
+        .nav-links {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
 .head{
 justify-content:left;
 gap:20px;
@@ -95,15 +107,21 @@ gap:20px;
             padding-left: 5px;
         }
 
-        .social-links a {
-            font-size: 22px;
-            margin-right: 10px;
-            color: #ffd78a;
+        .social-links img {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            margin-top: 30px;
+            border-radius: 5px;
             transition: 0.3s;
+            align-items: center;
         }
 
-        .social-links a:hover {
-            color: white;
+        .social-links img:hover {
+            transform: scale(1.2);
+            background: #ffd78a;
+            padding: 5px;
+            border-radius:4px;
         }
 
         .newsletter {
@@ -225,29 +243,25 @@ gap:20px;
 </style>
    <body>
     <div>
-      <div class="navbar-main-container">
-        <div class="logo">
-        <img src="c:\Users\Shobhit\Downloads\yoga-logo.jpg" height="50px"/>
-        <span>Blissful Yoga Hub</span>
-        </div>
-   <div class="head">   
- <a href="./index.html">Home</a>
+      <div>
+        <nav class="navbar">
+            <div class="logo">Blissful Yoga Hub</div>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="types.html">Types</a>
                 <a href="benefits.html">Benefits</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact</a>
                 <a href="signup.html">Signup</a>
-        </div> 
-        </div>
+            </div>
+        </nav>
+    </div>
   <div>
         <video width ="1500px" style="margin-top: 15px;" autoplay muted>
           <source src="videos/video.mp4" type="video/mp4"/>
         </video>
-        </div>
-        <div class="logo-text">
-        <h1>Welcome to Blissful Yoga Hub</h1>
-        <p>Your Journey to Inner Peace Begins Here</p>
     </div>
 </div>
 
@@ -333,21 +347,23 @@ gap:20px;
                 <p><b>Address:</b>College road,Nashik</p>
             </div>
         </div>
-        <div align ="center">
-             <div class="social-icons">
-            <img src="./images/insta.jpeg"style="max-width: 30px;" alt="insta.jpeg" />
-            <img src="./images/facebook.jpeg" style="max-width: 30px;" alt="images/facebook.jpeg" />
-            <img src="./images/telegram.jpeg" style="max-width: 30px;" alt="images/telegram.jpeg" />
-</div>
-        </div>
-<div class="newsletter">
-            <h3>Subscribe to Our Newsletter</h3>
-            <div class="newsletter-box">
-                <input type="email" placeholder="Enter your email...">
-                <button>Subscribe</button>
+        <div align="center">
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/blissfulyogahub" target="_blank">
+                    <img src="./images/insta.jpeg" alt="Instagram" height="30px" width="30px">
+                </a>
+
+                <a href="https://www.facebook.com/blissfulyogahub" target="_blank">
+                    <img src="./images/facebook.png" alt="Facebook" height="30px" width="30px">
+                </a>
+
+
+                <a href="https://t.me/blissfulyogahub" target="_blank">
+                    <img src="./images/telegram.png" alt="Telegram" height="30px" width="30px">
+                </a>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p>© 2025 Blissful Yoga Hub | All Rights Reserved</p>
         </div>
