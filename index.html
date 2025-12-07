@@ -4,25 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width,initial-scale=1.0">
     <title>blissful yoga</title>
-    <link rel="stylesheet" href=".css/style.css"/>
    </head>
-   <style>.navbar-main-container{
+   <style>.navbar {
+            width: 1440px;
+            padding: 15px 40px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background color:rgb;
-            color:blue;
+            background: #ffffff;
             box-shadow: 0 2px 8px rgb(0, 0, 0);
-}
-.logo{
-  display: flex;
-  align-items: center;
-  gap:10px;
-  justify-content: left;
-}
+            position: fixed;
+            top: 0px;
+            left: 0px
+        }
+
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+            color: #121312;
+        }
+
+        .nav-links {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
 .head{
 justify-content:left;
 gap:20px;
+}
+.head a{
+   margin-right: 10px;
+   text-decoration: none;; 
 }
 .main-container{
   justify-content: space-evenly;
@@ -43,8 +58,8 @@ gap:20px;
  box-shadow: black;
 }
 .footer {
-            background: #c38c8c;
-            color: #e0e0e0;
+            background: #5f97a4;
+            color: #93b6df;
             padding: 40px 20px 10px;
             font-family: 'Poppins', sans-serif;
         }
@@ -54,8 +69,8 @@ gap:20px;
             flex-wrap: wrap;
             justify-content: space-between;
             gap: 40px;
-            width: 1200px;
-            margin-left: 250px;
+            /* width: 1200px;
+            margin-left: 250px; */
 
         }
 
@@ -88,19 +103,25 @@ gap:20px;
         }
 
         .footer-box ul li a:hover {
-            color: #ffd78a;
+            color: #c9c5bf;
             padding-left: 5px;
         }
 
-        .social-links a {
-            font-size: 22px;
-            margin-right: 10px;
-            color: #ffd78a;
+        .social-links img {
+            width: 32px;
+            height: 32px;
+            margin-right: 12px;
+            margin-top: 30px;
+            border-radius: 5px;
             transition: 0.3s;
+            align-items: center;
         }
 
-        .social-links a:hover {
-            color: white;
+        .social-links img:hover {
+            transform: scale(1.2);
+            background: #ffd78a;
+            padding: 5px;
+            border-radius:4px;
         }
 
         .newsletter {
@@ -145,52 +166,159 @@ gap:20px;
         .footer-bottom p {
             font-size: 14px
         }
+        .logo-text {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    color: white;
+}
+
+.logo-text h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo-text p {
+    font-size: 20px;
+}
+
+
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro h2 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    width: 750px;
+    margin: auto;
+    font-size: 16px;
+    color: #555;
+}
+
+.info-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.infocard {
+    width: 250px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgb(0,0,0);
+    transition: 0.3s;
+}
+
+.infocard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 14px rgb(0,0,0);
+}
+
+.infocard img {
+    width: 100%;
+    height: 170px;
+    border-radius: 8px;
+}
+
+.infocard h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.infocard p {
+    color: #555;
+    margin-top: 6px;
+    font-size: 14px;
+}
 </style>
    <body>
     <div>
-      <div class="navbar-main-container">
-        <div class="logo">
-        <img src="c:\Users\Shobhit\Downloads\yoga-logo.jpg" height="50px"/>
-        <span>Blissful Yoga Hub</span>
-        </div>
-   <div class="head">   
- <a href="./index.html">Home</a>
+      <div>
+        <nav class="navbar">
+            <div class="logo">Blissful Yoga Hub</div>
+
+            <div class="nav-links">
+                <a href="../index.html">Home</a>
                 <a href="about.html">About</a>
                 <a href="types.html">Types</a>
                 <a href="benefits.html">Benefits</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="contact.html">Contact</a>
                 <a href="signup.html">Signup</a>
-        </div> 
-        </div>
+            </div>
+        </nav>
+    </div>
   <div>
-        <video height ="750px" autoplay muted>
+        <video width ="1500px" style="margin-top: 15px;" autoplay muted>
           <source src="videos/video.mp4" type="video/mp4"/>
         </video>
-        </div>
-        <h1>
-          <p>
-            Yoga is an ancient Indian practice that involves a holistic system of physical postures (asanas), breathing techniques (pranayama), and meditation to achieve a state of harmony between the mind and body. The word "yoga" comes from the Sanskrit root "yuj," meaning "to join," and the practice aims to bring the individual consciousness into union with the universal consciousness. Modern yoga often emphasizes the physical and mental health benefits, such as increased flexibility, strength, and stress relief.
-          </p>
-        </h1>
-        <div class="main-container">
-          <div class="item"><b><u>Origins:</u></b> <br>
-            Yoga originated in India thousands of years ago as a spiritual discipline.</div>
-
-<div class="item"><b><u>Core components:</u></b><br>
-   It includes physical postures, breathing exercises, and meditation, and can also involve other practices like chanting and ethical principles. </div>
-
-<div class="item"><b><u>Goals:</u></b> <br>
-  The ultimate goal of yoga is self-realization and spiritual liberation. Modern practice also focuses on achieving physical health, mental clarity, and emotional balance. </div>
-
-<div class="item"><b><u>Modern variations:</u></b> <br>
-  There are many different styles of yoga, ranging from gentle to intense, such as Hatha, Vinyasa, Bikram, and Iyengar.</div>
-
-<div class="item"><b><u>Benefits:</u></b><br>
-   Regular yoga practice may lead to improved physical health, mental clarity, and a greater sense of well-being and tranquility.</div>
-
+    </div>
 </div>
-<hr>
+
+
+<div class="intro">
+    <h2>Discover the Essence of Yoga</h2>
+    <p>
+        Yoga is a timeless practice that harmonizes the mind, body, and spirit.  
+        At Blissful Yoga Hub, we aim to bring traditional yogic wisdom together with 
+        modern wellness practices to create a peaceful lifestyle for everyone.
+    </p>
+</div>
+
+<section>
+
+<div class="info-cards">
+  
+    <div class="infocard">
+        <img src="./images/origen.png" alt="Origin">
+        <h3>Origin</h3>
+        <p>
+            Yoga originated thousands of years ago in India as a spiritual and philosophical discipline 
+            promoting balance, clarity, and self-awareness.
+        </p>
+    </div>
+
+    <div class="infocard">
+        <img src="./images/core.jpeg" alt="Core Components">
+        <h3>Core Components</h3>
+        <p>
+            Breath control, physical postures, mindful meditation, and deep relaxation form the core pillars 
+            of every yoga journey.
+        </p>
+    </div>
+
+   
+    <div class="infocard">
+        <img src="./images/goal.png" alt="Goals">
+        <h3>Goals</h3>
+        <p>
+            Yoga aims to enhance flexibility, strength, inner calm, emotional balance, and overall 
+            well-being through consistent practice.
+        </p>
+    </div>
+
+ 
+    <div class="infocard">
+        <img src="./images/variation.png" alt="Modern Yoga">
+        <h3>Modern Variations</h3>
+        <p>
+            Today yoga includes Hatha, Vinyasa, Power Yoga, Aerial Yoga, Prenatal Yoga, and many other 
+            styles that suit all fitness levels.
+        </p>
+    </div>
+</div>
+</section>
+
 <footer class="footer">
         <div class="footer-container">
 
@@ -220,26 +348,22 @@ gap:20px;
             </div>
         </div>
         <div align="center">
-             <div class="social-icons">
-            <img src="../images/images/insta.jpeg" alt="insta.jpeg" />
-            <img src="../images/images/facebook.jpeg" alt="images/facebook.jpeg" />
-            <img src="../images/images/telegram.jpeg" alt="images/telegram.jpeg" />
+            <div class="social-links">
+
+                <a href="https://www.instagram.com/blissfulyogahub" target="_blank">
+                    <img src="./images/insta.jpeg" alt="Instagram" height="30px" width="30px">
+                </a>
+
+                <a href="https://www.facebook.com/blissfulyogahub" target="_blank">
+                    <img src="./images/facebook.png" alt="Facebook" height="30px" width="30px">
+                </a>
 
 
-        </div>
-        </div>
-
-
-
-
-        <div class="newsletter">
-            <h3>Subscribe to Our Newsletter</h3>
-            <div class="newsletter-box">
-                <input type="email" placeholder="Enter your email...">
-                <button>Subscribe</button>
+                <a href="https://t.me/blissfulyogahub" target="_blank">
+                    <img src="./images/telegram.png" alt="Telegram" height="30px" width="30px">
+                </a>
             </div>
         </div>
-
         <div class="footer-bottom">
             <p>© 2025 Blissful Yoga Hub | All Rights Reserved</p>
         </div>
@@ -248,80 +372,5 @@ gap:20px;
     </div>
    </body>
 </html>
-
-
-<<<<<<< HEAD
-
-
-.yoga-box{
-            display: inline-flex;
-            align-items: center;
-        }
-         .img1{
-            display: inline-flex;
-            align-items: center;
-            width: 200px;
-            height: 200px;
-            border-radius: 10px;
-            padding: 10px;
-        }
-
-
-        .yoga-text {
-            display: inline-flex;
-            align-items: center;
-            margin-top:6px;
-            font-size: 15px;
-            color:rgb(243, 225, 243)
-        }
-        
-        .proj-info{
-            display: inline-flex;
-            align-items: center;
-            position: absolute;
-            margin-left:5px;
-        }
-        .heading1{
-            text-align: top;
-            display: contents;
-            color: black;
-            font-size: 25px;
-            padding: 5px 0px 5px 5px;
-            position: relative;    
-        }
-        
-
-        
-    </style>
-</head>
-<body>
-    <img src="../images/types of yoga.jpg" height="350" width="1515"/>
-    <div class="heading">Types Of Yoga</div><br/>
-    <div class="container">
-        <div class="yoga-box">
-           
-            <div class="yoga-text">
-                <img src="../images/uttanasana.jpg" alt="uttanasana" class="img1">
-                </div>
-              <span class="heading1">Uttanasana</span>
-                <div>
-                    <p class="proj-info">Standing Forward Fold increases balance by grounding and centering our energy while stretching the hamstrings, hips, and calves, promoting stability and relaxation. Standing Forward Fold also relieves tension, improves balance, calms the mind and promotes relaxation. Modification: Bend the knees slightly if there is tightness in the hamstrings or use blocks to bring the floor closer.</p>
-
-                </div>
-            </div>
-        </div>
-
-
-        
-    </div>
-
-</body>
-</html>
-
- 
-=======
->>>>>>> 6f8909605c6e06acc78cc9b3e1d7ad142c15991f
-
-
 
 
