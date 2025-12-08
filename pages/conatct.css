@@ -1,0 +1,387 @@
+.navbar {
+    width: 1440px;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+    position: fixed;
+    top: 0px;
+    left: 0px
+  }
+
+  .logo {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .logo img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+  }
+
+  .logo span {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .nav-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+  }
+
+  .main-page {
+    padding-right: 5px 30px 0px 30px;
+  }
+
+  body {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+  }
+
+  .item {
+    background-color: white;
+    height: 430px;
+    width: 500px;
+    border: 1px solid rgb(255, 255, 255);
+  }
+
+  .heading {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 40px 40px 10px 50px;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .images {
+    display: inline-flexbox;
+  }
+
+  .proj-sub-information {
+    display: flex;
+    justify-content: center;
+    padding: 15px 20px 0px 20px;
+  }
+
+  .info {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+
+  }
+
+  .item2 {
+    background-color: #b1e3fd;
+    height: 430px;
+    width: 500px;
+    border: 1px solid rgb(255, 255, 255);
+    margin-bottom: 40pxpx;
+  }
+
+  .heading2 {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 200;
+    padding: 20px 5px 10px 20px;
+    margin-top: 30px;
+  }
+
+  .user-info {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-name {
+    background-color: white;
+    color: rgb(104, 101, 101);
+    padding: 5px 190px 5px 10px;
+    margin: 25px 10px 10px 10px;
+  }
+
+  .user-info2 {
+    display: flex;
+    align-items: center;
+  }
+
+  .user-message {
+    background-color: white;
+    color: rgb(104, 101, 101);
+    padding: 5px 190px 100px 10px;
+    margin: 10px 10px 20px 10px;
+  }
+
+  .send-button {
+    background-color: #3366b2;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    margin: 10px;
+    border-radius: 20px;
+    border: 1px solid #3366b2;
+  }
+
+  .send-button:hover {
+    transition: 0.3s;
+    background: rgb(53, 53, 222);
+    padding: 5px 15px 5px 15px;
+    border-radius: 20px;
+  }
+
+  .contact-section {
+    padding: 50px 0;
+    background: #f7f7f7;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-container {
+    width: 90%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .meet-box,
+  .form-box {
+    background: white;
+    padding: 35px 40px;
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .meet-box {
+    text-align: center;
+  }
+
+  .meet-box h2 {
+    margin-bottom: 25px;
+  }
+
+  .info-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+
+  .footer {
+    background: #84c2cc;
+    color: black;
+    padding: 40px 20px 10px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    width: 1200px;
+    margin-left: 250px;
+  }
+
+  .footer-box {
+    flex: 1 1 250px;
+  }
+
+  .footer-box h3 {
+    margin-bottom: 15px;
+    color: #FFD78A;
+    font-size: 20px;
+  }
+
+  .footer-box p {
+    font-size: 15px;
+  }
+
+  .footer-box ul {
+    padding: 0;
+  }
+
+  .footer-box ul li {
+    margin: 8px 0;
+  }
+
+  .footer-box ul li a {
+    color: #070707;
+    transition: 0.3s;
+  }
+
+  .footer-box ul li a:hover {
+    color: #E0970E;
+    padding-left: 5px;
+  }
+
+  .social-links img {
+    width: 32px;
+    height: 32px;
+    margin-right: 12px;
+    margin-top: 30px;
+    border-radius: 5px;
+    transition: 0.3s;
+    align-items: center;
+  }
+
+  .social-links img:hover {
+    transform: scale(1.2);
+    background: #ffd78a;
+    padding: 5px;
+    border-radius: 4px;
+  }
+
+  .newsletter {
+    text-align: center;
+    margin: 40px auto;
+    width: 600px;
+  }
+
+  .newsletter-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .newsletter input {
+    padding: 12px;
+    width: 60%;
+    border-radius: 5px 0 0 5px;
+  }
+
+  .newsletter button {
+    padding: 12px 20px;
+    border: none;
+    background: #ECA92E;
+    color: black;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .newsletter button:hover {
+    background: white;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    margin-top: 30px;
+    padding-top: 10px;
+  }
+
+  .footer-bottom p {
+    font-size: 14px
+  }
+
+  .social-icons img {
+    width: 28px;
+    margin: 0 5px;
+    transition: 0.3s;
+  }
+
+@media (max-width: 768px) {
+
+  .navbar {
+    width: 100%;
+    padding: 15px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  img.main-page {
+    width: 100%;
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .item,
+  .item2 {
+    width: 95%;
+    height: auto;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .heading,
+  .heading2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .user-name {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .user-message {
+    width: 90%;
+    padding: 10px;
+    height: 120px;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer-container {
+    width: 100%;
+    margin-left: 0;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .footer-box {
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+  }
+
+  .social-links img {
+    margin-top: 10px;
+  }
+
+  .newsletter {
+    width: 100%;
+  }
+
+  .newsletter input {
+    width: 55%;
+  }
+  }
+
